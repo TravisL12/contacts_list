@@ -1,0 +1,29 @@
+.contacts-grid {
+    padding: 10rem 0;
+
+    .contact-card {
+        position: relative;
+        padding: 2rem;
+        height: 30rem;
+        background: #fff;
+        border: solid 1px #ECEBEC;
+        margin-bottom: 1rem;
+
+        .profile-image {
+            margin: 0 auto;
+            overflow: hidden;
+            height: 20rem;
+            text-align: center;
+            img { height: 100%; }
+        }
+
+        .profile-icon {
+            position: absolute;
+            left: 4.5rem;
+            top: 19.5rem;
+            height: 5rem;
+            img { height: 100%; }
+        }
+
+    }
+}

@@ -1,0 +1,37 @@
+html {
+  font-size: 10px; }
+
+body {
+  font-family: Helvetica; }
+
+.header {
+  color: red; }
+
+.main {
+  background: #F2F1F2; }
+
+.contacts-grid {
+  padding: 10rem 0; }
+  .contacts-grid .contact-card {
+    position: relative;
+    padding: 2rem;
+    height: 30rem;
+    background: #fff;
+    border: solid 1px #ECEBEC;
+    margin-bottom: 1rem; }
+    .contacts-grid .contact-card .profile-image {
+      margin: 0 auto;
+      overflow: hidden;
+      height: 20rem;
+      text-align: center; }
+      .contacts-grid .contact-card .profile-image img {
+        height: 100%; }
+    .contacts-grid .contact-card .profile-icon {
+      position: absolute;
+      left: 4.5rem;
+      top: 19.5rem;
+      height: 5rem; }
+      .contacts-grid .contact-card .profile-icon img {
+        height: 100%; }
+
+/*# sourceMappingURL=style.css.map */

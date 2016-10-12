@@ -1,1 +1,22 @@
-<h1>Home!</h1>
+<div class='container'>
+
+    <div class='contacts-grid row'>
+
+        <div class='col-md-3 col-sm-6 col-xs-12' ng-repeat='contact in vmHome.contacts'>
+            <div class='contact-card'>
+                <div class='profile-image'>
+                    <img ng-src='{{contact.profile_image}}'>
+                </div>
+
+                <div class='profile-icon'>
+                    <img ng-src='{{contact.icon}}'>
+                </div>
+
+                <p class='name'>{{contact.name}}</p>
+                <p class='job-company'>{{contact.job}} | {{contact.company_name}}</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
