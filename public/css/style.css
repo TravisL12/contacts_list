@@ -16,13 +16,16 @@ h1, h2, h3, h4, h5, p {
 
 .contacts-grid {
   padding: 8rem 0; }
+  .contacts-grid > div {
+    padding-left: 5px;
+    padding-right: 5px; }
   .contacts-grid .contact-card {
     position: relative;
     padding: 2rem;
     height: 33rem;
     background: #fff;
     border: solid 1px #e6e4e6;
-    margin-bottom: 1rem; }
+    margin-bottom: 1.5rem; }
     .contacts-grid .contact-card .profile-image {
       margin: 0 auto;
       overflow: hidden;

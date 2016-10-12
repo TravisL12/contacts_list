@@ -1,13 +1,16 @@
 .contacts-grid {
     padding: 8rem 0;
-
+    & > div {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
     .contact-card {
         position: relative;
         padding: 2rem;
         height: 33rem;
         background: #fff;
         border: solid 1px darken($background-gray, 5%);
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
 
         .profile-image {
             margin: 0 auto;
