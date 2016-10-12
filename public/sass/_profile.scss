@@ -4,9 +4,9 @@
     .contact-card {
         position: relative;
         padding: 2rem;
-        height: 30rem;
+        height: 33rem;
         background: #fff;
-        border: solid 1px #ECEBEC;
+        border: solid 1px darken($background-gray, 5%);
         margin-bottom: 1rem;
 
         .profile-image {
@@ -23,6 +23,17 @@
             top: 19.5rem;
             height: 5rem;
             img { height: 100%; }
+        }
+
+        .profile-description {
+            margin-top: 3rem;
+            p.name {
+                font-size: 1.8rem;
+            }
+
+            p.job-company {
+                font-size: 1.2rem;
+            }
         }
 
     }

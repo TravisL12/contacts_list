@@ -12,8 +12,10 @@
                     <img ng-src='{{contact.icon}}'>
                 </div>
 
-                <p class='name'>{{contact.name}}</p>
-                <p class='job-company'>{{contact.job}} | {{contact.company_name}}</p>
+                <div class='profile-description'>
+                    <p class='name'>{{contact.name}}</p>
+                    <p class='job-company'>{{contact.job}} | {{contact.company_name | hashTag}}</p>
+                </div>
             </div>
         </div>
 
