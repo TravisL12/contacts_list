@@ -4,17 +4,18 @@ html {
 body {
   font-family: Helvetica; }
 
-p {
+h1, h2, h3, h4, h5, p {
   margin: 0; }
-
-.header {
-  color: red; }
 
 .main {
   background: #F2F1F2; }
 
+.header {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
 .contacts-grid {
-  padding: 10rem 0; }
+  padding: 8rem 0; }
   .contacts-grid .contact-card {
     position: relative;
     padding: 2rem;
