@@ -10,11 +10,17 @@
 
   <body ng-app='honeyBookApp'>
     <div ui-view='header'></div>
-    <div class='main' ng-cloak ui-view='main'><span>Loading...</span></div>
+    <div class='main' ng-cloak ui-view='main'>
+      <div class='loading'>
+        <h1>Loading...</h1>
+        <i>Keep in mind the response times from the server will vary (0-8 seconds).</i>
+      </div>
+    </div>
   </body>
 
   <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js'></script>
   <script src='/public/js/vendor/angular-ui-router.min.js'></script>
+  <script src='/public/js/vendor/angular-animate.min.js'></script>
   <script src='/public/js/app.js'></script>
 
   <!-- Controllers -->

@@ -13,7 +13,12 @@ h1, h2, h3, h4, h5, p {
     margin: 0;
 }
 
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak span { color: red; }
+.loading {
+    position: absolute;
+    top: 20vh;
+    width: 100%;
+    text-align: center;
+}
 
 .main {
     background: $background-gray;

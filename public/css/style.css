@@ -7,8 +7,11 @@ body {
 h1, h2, h3, h4, h5, p {
   margin: 0; }
 
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak span {
-  color: red; }
+.loading {
+  position: absolute;
+  top: 20vh;
+  width: 100%;
+  text-align: center; }
 
 .main {
   background: #F2F1F2; }
@@ -22,6 +25,14 @@ h1, h2, h3, h4, h5, p {
   .contacts-grid > div {
     padding-left: 5px;
     padding-right: 5px; }
+    .contacts-grid > div.ng-enter, .contacts-grid > div.ng-leave {
+      transition: 0.25s ease-out all; }
+    .contacts-grid > div.ng-enter, .contacts-grid > div.ng-leave.ng-leave-active {
+      transform: scale3d(0.75, 0.75, 0);
+      opacity: 0; }
+    .contacts-grid > div.ng-leave, .contacts-grid > div.ng-enter.ng-enter-active {
+      transform: scale3d(1, 1, 1);
+      opacity: 1; }
   .contacts-grid .contact-card {
     position: relative;
     width: 100%;
