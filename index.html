@@ -10,7 +10,7 @@
 
   <body ng-app='honeyBookApp'>
     <div ui-view='header'></div>
-    <div class='main' ui-view='main'></div>
+    <div class='main' ng-cloak ui-view='main'><span>Loading...</span></div>
   </body>
 
   <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js'></script>

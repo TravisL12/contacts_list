@@ -22,11 +22,11 @@ angular.module('honeyBookApp', ['ui.router']).config(function ($urlRouterProvide
             }
         }
     })
-    .state('honeybook.home', {
+    .state('honeybook.contacts', {
         url: '/',
         views: {
             'main@': {
-                templateUrl: '/public/views/home.html',
+                templateUrl: '/public/views/contacts.html',
                 controller: 'HomeController as vmHome'
             }
         }

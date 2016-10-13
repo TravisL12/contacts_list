@@ -1,5 +1,6 @@
 $background-gray: #F2F1F2;
 
+
 // Set the font-size for easy calc with rem units (1rem == 10px, 2rem == 20px, ...)
 html { font-size: 10px; }
 
@@ -7,9 +8,12 @@ body {
   font-family: Helvetica;
 }
 
+
 h1, h2, h3, h4, h5, p {
     margin: 0;
 }
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak span { color: red; }
 
 .main {
     background: $background-gray;
