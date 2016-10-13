@@ -14,7 +14,8 @@ h1, h2, h3, h4, h5, p {
   text-align: center; }
 
 .main {
-  background: #F2F1F2; }
+  background: #F2F1F2;
+  min-height: 100rem; }
 
 .header {
   margin-top: 2rem;
