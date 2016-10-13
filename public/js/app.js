@@ -10,8 +10,13 @@ angular.module('honeyBookApp', ['ui.router']).config(function ($urlRouterProvide
         abstract: true,
         views: {
             'header': {
-                templateUrl: '/public/views/header.html'
-                // controller: 'HeaderController'
+                templateUrl: '/public/views/header.html',
+                controllerAs: 'vmHeader',
+                controller: ['$scope', function ($scope) {
+                    this.sendSearch = function () {
+                        $scope.$emit('searchContacts', this.search.keyword);
+                    };
+                }]
             }
         },
         resolve: {
@@ -27,7 +32,7 @@ angular.module('honeyBookApp', ['ui.router']).config(function ($urlRouterProvide
         views: {
             'main@': {
                 templateUrl: '/public/views/contacts.html',
-                controller: 'HomeController as vmHome'
+                controller: 'ContactsController as vmContacts'
             }
         }
     })

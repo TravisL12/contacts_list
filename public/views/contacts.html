@@ -1,7 +1,7 @@
 <div class='container'>
 
     <div class='contacts-grid row'>
-        <div class='col-md-3 col-sm-6 col-xs-12' ng-repeat='contact in vmHome.contacts'>
+        <div class='col-md-3 col-sm-6 col-xs-12' ng-repeat='contact in vmContacts.contacts | filter:vmContacts.contactFilter'>
             <div class='contact-card'>
                 <div class='profile-image'>
                     <img ng-src='{{contact.profile_image}}'>
