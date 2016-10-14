@@ -5,6 +5,6 @@ angular.module('honeyBookApp').controller('ContactsController', ['Addressbook', 
     ContactsCtrl.contacts = Addressbook.contacts;
 
     $rootScope.$on('searchContacts', function (e, data) {
-        ContactsCtrl.contactFilter = {name: data};
+        ContactsCtrl.contactFilter = { name: data };
     })
 }]);

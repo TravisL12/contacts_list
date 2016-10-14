@@ -5,13 +5,14 @@
     <title>Hello HoneyBook!</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'>
     <link rel='stylesheet' type='text/css' href='public/css/style.css'>
+    <meta name='viewport' content='width=device-width'>
     <base href='/'>
   </head>
 
   <body ng-app='honeyBookApp'>
     <div ui-view='header'></div>
     <div class='main' ng-cloak ui-view='main'>
-      <div class='loading'><img src='/public/images/honeybook.png'></div>
+      <div class='loading'><img class='logo' src='/public/images/honeybook.png'><br><img src='/public/images/loader.gif'></div>
     </div>
   </body>
 
@@ -27,7 +28,7 @@
   <script src='/public/js/services/addressbook.js'></script>
 
   <!-- Filters -->
-  <script src='/public/js/filters/truncate.js'></script>
+  <script src='/public/js/filters/phoneFormat.js'></script>
   <script src='/public/js/filters/hashTag.js'></script>
 
 </html>

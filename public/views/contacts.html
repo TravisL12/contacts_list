@@ -2,23 +2,25 @@
 
     <div class='contacts-grid row'>
         <div class='col-md-3 col-sm-6 col-xs-12' ng-repeat='contact in vmContacts.contacts | filter:vmContacts.contactFilter'>
+
             <div class='contact-card'>
+
                 <div class='profile-image'>
                     <img ng-src='{{contact.profile_image}}'>
                 </div>
-
 
                 <div class='profile-description'>
                     <div class='profile-icon'><img ng-src='{{contact.icon}}'></div>
 
                     <p class='name'>{{contact.name}}</p>
-                    <p class='job-company'><span title='{{contact.job}}'>{{contact.job | truncate:16}}</span> | <span title='{{contact.company_name}}'>{{contact.company_name | hashTag | truncate:16}}</span></p>
-                    <p class='phone'>Phone Number: {{contact.phone}}</p>
+                    <p class='job-company'><span title='{{contact.job}}'>{{contact.job}}</span> | <span title='{{contact.company_name}}'>{{contact.company_name | hashTag}}</span></p>
+                    <p class='phone'>Phone Number: {{contact.phone | phoneFormat}}</p>
                     <p class='email'><a href='mailto:{{contact.email}}' target='_blank'>{{contact.email}}</a></p>
                 </div>
-            </div>
-        </div>
 
+            </div>
+
+        </div>
     </div>
 
 </div>
