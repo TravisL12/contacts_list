@@ -23,9 +23,7 @@ angular.module('honeyBookApp', ['ui.router', 'ngAnimate']).config(['$urlRouterPr
             resolve: {
                 // Load contacts from API before moving forward
                 HoneybookContacts: function ($http, Addressbook) {
-                    return $http.get('https://candidate-test.herokuapp.com/contacts').then(function (response) {
-                        Addressbook.contacts = response.data;
-                    });
+                    return Addressbook.refresh();
                 }
             }
         })

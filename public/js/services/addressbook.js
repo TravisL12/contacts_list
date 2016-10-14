@@ -13,9 +13,16 @@ angular.module('honeyBookApp').service('Addressbook', ['$http', function ($http)
     // profile_image (href link to image)
     // ------------------
 
-    var contacts;
+    var url = 'https://candidate-test.herokuapp.com/contacts',
+        contacts;
 
     return {
+
+        refresh: function () {
+            return $http.get(url).then(function (response) {
+                contacts = response.data;
+            });
+        },
 
         get contacts () {
             return contacts;
