@@ -11,7 +11,7 @@ angular.module('honeyBookApp', ['ui.router', 'ngAnimate']).config(['$urlRouterPr
             abstract: true,
             views: {
                 'header': {
-                    templateUrl: '/public/views/header.html',
+                    templateUrl: 'public/views/header.html',
                     controllerAs: 'vmHeader',
                     controller: ['$scope', function ($scope) {
                         this.sendSearch = function () {
@@ -33,7 +33,7 @@ angular.module('honeyBookApp', ['ui.router', 'ngAnimate']).config(['$urlRouterPr
             url: '/',
             views: {
                 'main@': {
-                    templateUrl: '/public/views/contacts.html',
+                    templateUrl: 'public/views/contacts.html',
                     controller: 'ContactsController as vmContacts'
                 }
             }
