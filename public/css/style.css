@@ -74,17 +74,17 @@ h1, h2, h3, h4, h5, p {
           width: 100%; }
       .contacts-grid .contact-card .profile-description p.name,
       .contacts-grid .contact-card .profile-description p.job-company,
-      .contacts-grid .contact-card .profile-description p.phone,
       .contacts-grid .contact-card .profile-description p.email,
       .contacts-grid .contact-card .profile-description p.phone {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis; }
+      .contacts-grid .contact-card .profile-description p.job-company,
+      .contacts-grid .contact-card .profile-description p.email,
+      .contacts-grid .contact-card .profile-description p.phone {
+        font-size: 1.2rem; }
       .contacts-grid .contact-card .profile-description p.name {
         font-size: 1.8rem; }
-      .contacts-grid .contact-card .profile-description p.job-company, .contacts-grid .contact-card .profile-description p.phone,
-      .contacts-grid .contact-card .profile-description p.email {
-        font-size: 1.2rem; }
       .contacts-grid .contact-card .profile-description p.phone {
         margin-top: 2rem; }
 
@@ -97,7 +97,6 @@ h1, h2, h3, h4, h5, p {
       .contacts-grid .contact-card:hover .profile-description {
         top: 0; }
       .contacts-grid .contact-card .profile-image {
-        display: inline-block;
         float: left;
         padding: 1rem;
         max-width: 10rem;
@@ -105,9 +104,8 @@ h1, h2, h3, h4, h5, p {
         .contacts-grid .contact-card .profile-image img {
           height: 100%; }
       .contacts-grid .contact-card .profile-description {
-        position: relative;
-        display: inline-block;
         float: left;
+        position: relative;
         top: 0;
         height: 100%;
         width: 65%;

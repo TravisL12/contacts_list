@@ -62,7 +62,6 @@
                 img { width: 100%; }
             }
 
-
             p.name,
             p.job-company,
             p.email,
@@ -72,19 +71,14 @@
                 text-overflow: ellipsis;
             }
 
-            p.name {
-                font-size: 1.8rem;
-            }
-
             p.job-company,
-            p.email {
+            p.email,
+            p.phone {
                 font-size: 1.2rem;
             }
 
-            p.phone {
-                @extend .job-company;
-                margin-top: 2rem;
-            }
+            p.name { font-size: 1.8rem; }
+            p.phone { margin-top: 2rem; }
         }
 
     }
@@ -101,20 +95,16 @@
             }
 
             .profile-image {
-                display: inline-block;
                 float: left;
                 padding: 1rem;
                 max-width: 10rem;
                 height: 100%;
-                img {
-                    height: 100%;
-                }
+                img { height: 100%; }
             }
 
             .profile-description {
-                position: relative;
-                display: inline-block;
                 float: left;
+                position: relative;
                 top: 0;
                 height: 100%;
                 width: 65%;
