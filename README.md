@@ -20,7 +20,7 @@ gem install sass
 ```
 To compile the CSS, run the following command from the project root directory:
 ```
-sass public/sass:public/css/
+sass public/sass/style.scss:public/css/style.css
 ```
 When actively developing on the project, use the `--watch` flag to continuously compile CSS when a change is detected in a SASS file:
 ```
